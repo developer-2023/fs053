@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors combined with other ones</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        div p.foo[class *= "PL"] {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p class="PL">Lorem, ipsum dolor.</p>
+        <p class="PL-pl">Lorem, ipsum dolor.</p>
+        <p class="PL foo">Lorem, ipsum dolor.</p>
+        <p class="PL-test">Lorem, ipsum dolor.</p>
+    </div>
+</body>
+</html>
